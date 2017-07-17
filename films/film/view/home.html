@@ -1,0 +1,40 @@
+<header class="header">
+    <div></div>
+    <div>首页</div>
+    <div class="header-rit">
+        <p class="iconfont icon-gengduo3"></p>
+        <p class="iconfont icon-sousuo-copy" ui-sref="search({id:1})"></p>
+    </div>
+</header>
+<section class="section">
+    <!--轮播图-->
+    <div class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><img src="images/banner.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="section-box">
+        <!--热门推荐-->
+        <h1>热门推荐</h1>
+        <div class="content">
+            <dl ng-repeat="i in data">
+                <dt><img ng-src="images/{{i.img}}" alt=""></dt>
+                <dd>
+                    <h2>{{i.tit}}</h2>
+                    <p class="Ellipsis">{{i.content}}</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <ul>
+        <li class="ff">
+            <span>电影</span>
+            <p></p>
+        </li>
+        <li><span>片库</span></li>
+        <li><span>离线下载</span></li>
+        <li><span>个人中心</span></li>
+    </ul>
+</footer>

@@ -1,0 +1,47 @@
+<div class="search-box">
+    <header class="header">
+        <div id="back">
+            <i class="iconfont icon-fanhui" ng-click="backs()"></i>
+        </div>
+        <div>首页</div>
+        <div class="header-rit">
+            <p class="iconfont icon-gengduo3"></p>
+            <p class="iconfont icon-sousuo-copy" ui-sref="search({id:1})"></p>
+        </div>
+    </header>
+
+    <div class="search-wrapper">
+        <div class="wrapper">
+            <input type="text" ng-model="txt" ng-keyup="judge(txt)" placeholder="输入视频名称或主演"><button>搜索</button>
+        </div>
+        <h1>热门词</h1>
+        <ol class="hot-film" id="hot-film">
+            <li ng-repeat="i in data | limitTo:3">
+                <span>{{i.id}}</span><b>{{i.tit}}</b>
+            </li>
+        </ol>
+        <div id="content">
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

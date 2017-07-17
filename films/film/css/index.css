@@ -1,0 +1,151 @@
+body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  font-size: .16rem; }
+  body img {
+    width: 100%; }
+
+div[ui-view] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column; }
+
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  padding-left: .1rem;
+  padding-right: .1rem; }
+  .header .header-rit {
+    float: right; }
+    .header .header-rit p {
+      width: .4rem;
+      float: right;
+      text-align: center; }
+  .header div {
+    flex: 1;
+    height: .48rem;
+    line-height: .48rem;
+    text-align: center; }
+  .header #back {
+    text-align: left; }
+    .header #back i {
+      width: .4rem;
+      height: .4rem;
+      display: block; }
+
+.section {
+  flex: 1;
+  overflow-y: auto; }
+  .section .section-box {
+    padding-left: .05rem;
+    padding-right: .05rem;
+    background-color: #e7e4e4; }
+    .section .section-box h1 {
+      height: .3rem;
+      font-size: .14rem;
+      color: #333;
+      line-height: .3rem;
+      border-bottom: 1px solid #cccccc; }
+
+.content, #content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .content dl, #content dl {
+    width: 49%;
+    background-color: #fff;
+    padding: .05rem;
+    box-sizing: border-box;
+    margin-top: .05rem; }
+    .content dl dt, #content dl dt {
+      margin-bottom: .05rem; }
+    .content dl dd h2, #content dl dd h2 {
+      font-size: .14rem; }
+    .content dl dd p, #content dl dd p {
+      font-size: .12rem; }
+    .content dl dd .Ellipsis, #content dl dd .Ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1; }
+
+.footer {
+  background-color: #333;
+  color: #336699; }
+  .footer ul {
+    display: flex;
+    height: .48rem;
+    align-items: center; }
+    .footer ul li {
+      flex: 1;
+      height: .48rem;
+      line-height: .48rem;
+      text-align: center;
+      font-size: .14rem;
+      position: relative;
+      box-sizing: border-box; }
+      .footer ul li p {
+        position: absolute;
+        top: .38rem;
+        background-image: url("../images/guang.png");
+        width: 100%;
+        height: .02rem; }
+    .footer ul .ff {
+      color: #fff; }
+
+.search-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  z-index: 10; }
+
+
+.reds{
+  color: red;
+}
+
+.search-wrapper {
+  padding: .1rem; }
+  .search-wrapper h1 {
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .14rem; }
+  .search-wrapper .wrapper {
+    display: flex; }
+    .search-wrapper .wrapper input {
+      flex: 5;
+      height: .3rem;
+      padding: 0 .05rem; }
+    .search-wrapper .wrapper button {
+      flex: 1;
+      height: .34rem;
+      background-color: #0a4ea1;
+      border: none;
+      color: #fff; }
+  .search-wrapper .hot-film {
+    background-color: #fff;
+    padding: .1rem; }
+    .search-wrapper .hot-film li {
+      height: .3rem;
+      line-height: .3rem;
+      border-bottom: 1px solid #eee; }
+      .search-wrapper .hot-film li b {
+        font-weight: normal;
+        padding-left: .15rem; }
+
+/*# sourceMappingURL=index.css.map */
